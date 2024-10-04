@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pranay",
+	"version": "${version}",
+	"name": "Pranay",
+	"description": "This is practice mod",
+	"authors": [
+		"Pranay"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pranay/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.pranay.Pranay"
+		],
+		"client": [
+			"com.pranay.pranayClient"
+		],
+		"fabric-datagen": [
+			"com.pranay.PranayDataGenerator"
+		]
+	},
+	"mixins": [
+		"pranay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
